@@ -8,7 +8,7 @@ import { User } from 'src/entities/user.entity';
 import { Repository } from 'typeorm';
 import { Doctor } from 'src/entities/doctor.entity';
 import { DoctorImage } from 'src/entities/doctorImage.entity';
-import { UpdateUserDto } from 'src/user/Dtos/User/updateuserDto.dto';
+import { UpdateUserDto } from 'src/user/Dtos/User/updateUserDto.dto';
 @Injectable()
 export class UserService {
   constructor(
