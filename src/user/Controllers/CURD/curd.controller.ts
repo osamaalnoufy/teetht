@@ -10,7 +10,7 @@ import {
 } from '@nestjs/common';
 import { CloudinaryService } from 'src/cloudinary/cloudinary.service';
 import { UpdateDoctorDto } from 'src/user/Dtos/Doctor/updateDoctorDto.dto';
-import { UpdateUserDto } from 'src/user/Dtos/User/updateuserDto.dto';
+import { UpdateUserDto } from 'src/user/Dtos/User/updateUserDto.dto';
 import { Roles } from 'src/user/Guards/roles.decorator';
 import { UsersGuard } from 'src/user/Guards/users.guard';
 import { DoctorService } from 'src/user/Services/Doctor/doctor.service';
