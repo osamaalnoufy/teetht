@@ -14,7 +14,6 @@ import { AuthController } from '../Controllers/Auth/auth.controller';
 import { CrudController } from '../Controllers/CURD/curd.controller';
 import { ResetToken } from 'src/entities/resetTokenSchema.entity';
 import { Tokens } from 'src/entities/tokens.entity';
-import { GoogleStrategy } from '../Strategies/google.strategy';
 import { LocalDoctorStrategy } from '../Strategies/localdoctor-strategy';
 import { LocalUserStrategy } from '../Strategies/localuser-strategy';
 import { AuthService } from '../Services/Auth/auth.service';
@@ -50,7 +49,6 @@ import { CloudinaryService } from 'src/cloudinary/cloudinary.service';
     UserService,
     DoctorService,
     MailService,
-    GoogleStrategy,
     LocalDoctorStrategy,
     LocalUserStrategy,
     CloudinaryService,
