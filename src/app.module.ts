@@ -8,7 +8,6 @@ import { CasesModule } from './cases/Module/cases.module';
 import * as dotenv from 'dotenv';
 import { UsersModule } from './user/Module/users.module';
 import { GalleryModule } from './gallery/gallery.module';
-import { ThrottlerModule } from '@nestjs/throttler';
 dotenv.config();
 @Module({
   imports: [
@@ -33,14 +32,6 @@ dotenv.config();
     CasesModule,
     UsersModule,
     GalleryModule,
-    ThrottlerModule.forRoot({
-      throttlers: [
-        {
-          ttl: 10000,
-          limit: 10,
-        },
-      ],
-    }),
   ],
   controllers: [AppController],
   providers: [AppService],
